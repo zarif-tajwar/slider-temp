@@ -1,8 +1,8 @@
-const sliderCont = document.querySelector(".slider");
-const sliderCards = document.querySelectorAll(".slider-card");
-const rightArrow = document.querySelector(".arrow--right");
-const leftArrow = document.querySelector(".arrow--left");
-const sliderParent = document.querySelector(".slider-parent");
+// const sliderCont = document.querySelector(".slider");
+const sliderCards = document.querySelectorAll(".m-card");
+const rightArrow = document.querySelector(".slider-right-arrow");
+const leftArrow = document.querySelector(".slider-left-arrow");
+// const sliderParent = document.querySelector(".slider-parent");
 
 let currSlide = 2;
 
@@ -39,15 +39,15 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowRight") rightArrow.click();
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  sliderCont.classList.remove("no-transition");
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   sliderCont.classList.remove("no-transition");
+// });
 
-sliderCards.forEach((card) => {
-  card.addEventListener("click", (e) => {
-    const clickedCard = Number(e.target.closest(".slider-card").dataset.card);
-    if (currSlide === clickedCard - 1) return;
-    currSlide = clickedCard - 1;
-    slideTo();
-  });
-});
+// sliderCards.forEach((card) => {
+//   card.addEventListener("click", (e) => {
+//     const clickedCard = Number(e.target.closest(".slider-card").dataset.card);
+//     if (currSlide === clickedCard - 1) return;
+//     currSlide = clickedCard - 1;
+//     slideTo();
+//   });
+// });
